@@ -21,8 +21,8 @@ module.exports = function(env, argv) {
         plugins: [
             new HtmlWebpackPlugin({
                 title: 'webpack Boilerplate',
-                template: path.resolve(__dirname, './src/template.html'), // шаблон
-                filename: 'template.html', // название выходного файла
+                template: path.resolve(__dirname, './src/template.php'), // шаблон
+                filename: 'template.php', // название выходного файла
             }),
         ],
         module: {
@@ -46,7 +46,12 @@ module.exports = function(env, argv) {
                 // CSS, PostCSS, Sass
                 {
                     test: /\.(scss|css)$/,
-                    use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+                    use: [
+                        'style-loader',
+                        'css-loader',
+                        'postcss-loader',
+                        'sass-loader',
+                    ],
                 },
             ],
         }

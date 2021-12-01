@@ -20,3 +20,4 @@ heading.textContent = 'Как интересно!'
 const root = document.querySelector('#root')
 root.append(heading, p)
 
+console.log("123123123123")
