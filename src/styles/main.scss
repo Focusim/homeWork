@@ -1,0 +1,19 @@
+$font-size: 1rem;
+$font-color: black;
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+body {
+  background-color: rgba(24, 140, 140, 0.87);
+
+  h1 {
+    color: darkslategray;
+  }
+
+  p {
+    color: saddlebrown;
+  }
+}
