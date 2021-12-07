@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --watch --mode development"
   },
@@ -21,9 +20,10 @@
     "node-sass": "^6.0.1",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.0.1",
-    "sass-loader": "^12.3.0",
+    "sass": "^1.44.0",
+    "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
-    "webpack": "^5.64.4",
+    "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
   }
 }

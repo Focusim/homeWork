@@ -9,20 +9,21 @@ module.exports = function(env, argv) {
         devtool: mode ? '' : 'inline-source-map',
         entry: {
             //main: path.resolve(__dirname, './src/index.js'),
-            'template': [
+            'index': [
                 './src/index.js',
-                './src/styles/main.scss'
+                './src/styles/main.scss',
+                './src/styles/index.scss'
             ],
         },
         output: {
             path: path.resolve(__dirname, './dist'),
-            filename: './js/[name].js',
+            filename: './[name].js',
         },
         plugins: [
             new HtmlWebpackPlugin({
                 title: 'webpack Boilerplate',
-                template: path.resolve(__dirname, './src/template.php'), // шаблон
-                filename: 'template.php', // название выходного файла
+                template: path.resolve(__dirname, './index.php'), // шаблон
+                filename: 'index.php', // название выходного файла
             }),
         ],
         module: {
