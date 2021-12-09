@@ -80,12 +80,6 @@ const jsLoaders = () => {
 
 const plugins = () => {
     const base = [
-        new HTMLWebpackPlugin({
-            template: './index.html',
-            minify: {
-                collapseWhitespace: isProduction
-            }
-        }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
             {
@@ -123,10 +117,6 @@ module.exports = {
         }
     },
     optimization: optimization(),
-    devServer: {
-        port: 8888,
-        hot: isDevelopment
-    },
     devtool: isDevelopment ? 'source-map' : '',
     plugins: plugins(),
     module: {

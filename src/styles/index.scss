@@ -10,15 +10,12 @@ $main-color: tomato;
 
 .container {
   margin: 0 auto;
-  width: 80%;
-  text-align: center;
+  max-width: 1240px;
+  padding: 0 20px;
 }
 
-// FILES
-
-@import 'components/main';
-@import 'components/logo';
-
-
+body {
+  background-color: $main-color;
+}
 
 
