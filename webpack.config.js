@@ -39,7 +39,7 @@ function generateHtmlPlugins(templateDir) {
   return result;
 }
 
-const htmlPlugins = generateHtmlPlugins("./src/html/views");
+const htmlPlugins = generateHtmlPlugins("./src/");
 
 module.exports = {
   devServer: {
@@ -59,18 +59,18 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin({
-      patterns: [{
-        from: './src/img',
-        to: './img',
-      }, ],
-    }),
-    new CopyWebpackPlugin({
-      patterns: [{
-        from: './src/fonts',
-        to: './fonts',
-      }, ],
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns: [{
+    //     from: './src/img',
+    //     to: './img',
+    //   }, ],
+    // }),
+    // new CopyWebpackPlugin({
+    //   patterns: [{
+    //     from: './src/fonts',
+    //     to: './fonts',
+    //   }, ],
+    // }),
     new MiniCssExtractPlugin({
       filename: './css/main.css',
     }),
