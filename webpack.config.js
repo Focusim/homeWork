@@ -81,12 +81,12 @@ const jsLoaders = () => {
 const plugins = () => {
     const base = [
         new CleanWebpackPlugin(),
-        new CopyWebpackPlugin([
-            {
-                from: path.resolve(__dirname, 'src/favicon.ico'),
-                to: path.resolve(__dirname, 'dist')
-            }
-        ]),
+        // new CopyWebpackPlugin([
+        //     {
+        //         from: path.resolve(__dirname, 'src/favicon.ico'),
+        //         to: path.resolve(__dirname, 'dist')
+        //     }
+        // ]),
         new MiniCssExtractPlugin({
             filename: filename('css')
         })

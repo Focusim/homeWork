@@ -12,7 +12,9 @@
 <section id="header">
     <div class="container">
         <div class="header-inner">
-            <img class="logo" src="" alt="logo">
+            <div class="logo">
+                <img class="logo__img" src="" alt="logo">
+            </div>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item"><a href="#" class="menu__link">Инфо</a></li>
@@ -21,7 +23,14 @@
                     <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
                 </ul>
             </nav>
-            <img class="auth" src="" alt="auth">
+            <div class="auth">
+                <img class="auth__img" src="" alt="auth">
+            </div>
+            <div class="burger_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 </section>

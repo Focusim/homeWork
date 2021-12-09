@@ -1,7 +1,8 @@
 <?php require "src/assets/blocks/header.php" ?>
 
-<section class="main">
+<section id="main">
     <div class="container">
+        <input type="range" min="0" max="1000" style="margin-top:100px">
         <div class="main-inner">
             <table>
                 <thead>

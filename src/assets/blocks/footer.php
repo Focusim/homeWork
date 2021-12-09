@@ -1,3 +1,3 @@
 </body>
-<script src="dist/index.js"></script>
+<script src="dist/main.js"></script>
 </html>
