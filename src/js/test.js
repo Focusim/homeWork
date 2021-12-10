@@ -13,3 +13,4 @@ burger.addEventListener('click', function () {
 });
 
 alert("324234234")
+console.log('23423423432423')

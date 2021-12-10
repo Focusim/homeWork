@@ -65,18 +65,18 @@ const babelOptions = preset => {
     return options;
 };
 
-const jsLoaders = () => {
-  const loaders = [{
-      loader: 'babel-loader',
-      options: babelOptions()
-  }];
-
-  if (isDevelopment) {
-      loaders.push('eslint-loader');
-  }
-
-  return loaders;
-};
+// const jsLoaders = () => {
+//   const loaders = [{
+//       loader: 'babel-loader',
+//       options: babelOptions()
+//   }];
+//
+//   if (isDevelopment) {
+//       loaders.push('eslint-loader');
+//   }
+//
+//   return loaders;
+// };
 
 const plugins = () => {
     const base = [
@@ -106,7 +106,7 @@ module.exports = {
         main: ['@babel/polyfill', './index.js'],
     },
     output: {
-        filename: filename('js'),
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
@@ -152,7 +152,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: jsLoaders()
+                loader: "babel-loader" //jsLoaders()
             },
             {
                 test: /\.ts$/,
