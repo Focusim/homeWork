@@ -1,3 +1,3 @@
 </body>
-<script src="src/index.js"></script>
+<script src="dist/bundle.js"></script>
 </html>
