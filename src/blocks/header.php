@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" href="src/styles/main.scss">
-    <link rel="stylesheet" href="src/styles/index.scss">
+    <link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
 
