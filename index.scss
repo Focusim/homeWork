@@ -1,9 +1,92 @@
+$main-color: rgba(85, 220, 85, 0.69);
+
+
 #header {
-  background: rgba(1, 79, 79, 0.87);
+  background-image: url('./src/images/title-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 
   .header-inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .logo {
+    margin: 150px 0 0 0;
+    cursor: pointer;
+
+    &__img {
+
+    }
+  }
+
+  .contact {
+    margin: 150px 0 0 0;
+    cursor: pointer;
+
+    &__img:hover {
+      fill: rgba(85, 220, 85, 0.19);
+      transition: all .5s;
+    }
+
+    &__img:hover .contact__img-arrow {
+      fill: $main-color;
+      transition: all .5s;
+    }
+
+    &__img:hover .contact__img-ellips {
+      stroke: $main-color;
+      transition: all .5s;
+    }
+  }
+
+  .next {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.29);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.36);
+      transition: all .3s;
+    }
+
+    div {
+      height: auto;
+      width: 80px;
+      font-size: 80px;
+      color: black;
+      text-align: center;
+    }
+  }
+
+  .back {
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.29);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.36);
+      transition: all .3s;
+    }
+
+    div {
+      height: auto;
+      width: 80px;
+      font-size: 80px;
+      color: black;
+      text-align: center;
+    }
+  }
 }
+
+

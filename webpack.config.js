@@ -8,7 +8,8 @@ module.exports = {
     entry: './index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: 'images/[name][ext]'
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -43,6 +44,10 @@ module.exports = {
             'css-loader',
             'sass-loader'
             ]
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
         ]
     }
