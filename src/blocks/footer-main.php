@@ -1,3 +1,4 @@
+<a class="next" id="next"><div>&gt;</div></a>
 </div>
 </div>
 </section>

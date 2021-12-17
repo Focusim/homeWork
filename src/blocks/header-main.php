@@ -15,4 +15,4 @@
             <a class="logo" href="/">
                 <img class="logo__img" src="dist/images/logo.svg" alt="Лого">
             </a>
-
+            <a class="back" id="back"><div>&lt;</div></a>
