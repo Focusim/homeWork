@@ -15,7 +15,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css'
-        })
+        }),
     ],
     module: {
         rules: [
@@ -26,24 +26,24 @@ module.exports = {
             {
                 test: /\.less$/,
                 use: [
-                {
-                   loader: MiniCssExtractPlugin.loader,
-                   options: {},
-                },
-            'css-loader',
-            'less-loader'
-            ]
+                    {
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {},
+                    },
+                    'css-loader',
+                    'less-loader'
+                ]
             },
             {
                 test: /\.s[ac]ss$/,
                 use: [
-                {
-                   loader: MiniCssExtractPlugin.loader,
-                   options: {},
-                },
-            'css-loader',
-            'sass-loader'
-            ]
+                    {
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {},
+                    },
+                    'css-loader',
+                    'sass-loader'
+                ]
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
